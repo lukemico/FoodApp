@@ -1,0 +1,20 @@
+<h1>Create User</h1>
+
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.label :heading %>
+    <%= f.text_field :heading, required: true %>
+  </p>
+  <p>
+    <%= f.label :content %>
+    <%= f.text_area :content, required: true %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
+
+
+<!--
+<h1>Sign Up</h1>
+
+<%= render partial: "form" %> -->
