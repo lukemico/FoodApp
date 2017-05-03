@@ -75,7 +75,7 @@ text: "",
 venue: "Buck Mulligan",
 address: "217 High St",
 suburb: "Northcote",
-phone: "03 8712 3485",``
+phone: "03 8712 3485",
 website: "http://www.buckmulligans.com.au/"
 })
 
@@ -176,42 +176,36 @@ Blog.destroy_all
 cafe = Blog.create({
 title: "Best Cafes in Melbourne",
 tagline: "Enjoy the citys finest coffee",
-copy: "Like its residents, St Kilda’s spread of cafes is a real mixed bag. In a good way. You’ve got the institutions that have served the community for decades, and plenty of sleek newcomers rife with matcha lattes and health bowls. Again – in a good way. Get a spot outside under the palms and soak it up."
+copy: "Like its residents, St Kilda’s spread of cafes is a real mixed bag. In a good way. You’ve got the institutions that have served the community for decades, and plenty of sleek newcomers rife with matcha lattes and health bowls. Again – in a good way. Get a spot outside under the palms and soak it up.",
+venue_id: bad.id
 })
 
-# restaurant = Blog.create({
-# title: "Best Restaurants in Melbourne",
-# tagline: "The venues shaping this citys culimnary scene",
-# copy: "What makes a good restaurant? We are interested in how well a place lives up to its own ambitions, regardless of its age, price point or cuisine. Maybe it offers value for money and an incredible atmosphere. Maybe it pioneered a trend, and remains the most vital example of it. Or maybe, after several decades in operation, it still offers an undeniably great experience. All are equally valid answers. The remit may be wide, but if you’re looking for restaurants that both define and capture Melbourne’s culinary spirit, stop right here."
-# })
-#
-# byo = Blog.create({
-# title: "Best BYO Restaurants in Melbourne",
-# tagline: "When an expensive wine list just won't do",
-# copy: "How good is BYO? Whether you're eating on a budget or itching to try a bottle stashed at home, there is a certain satisfaction in walking through the door and pouring yourself exactly what you want to drink. Here are our favourites."
-# })
-#
-# brunch = Blog.create({
-# title: "best Brunch spots in Melbourne",
-# tagline: "Sweet or savoury? Avocado or Eggs? We can help you decide.",
-# copy: "Breakfast might even be the closest thing we have to a national cuisine. Here we pay tribute to Melbourne’s best; places shaping the very definition of the pre-midday meal. Others we’ve selected for consistent performance – they’ve nailed the classics and learnt how to handle the crowds that follow. Some are big, some are small. Some are secluded neighbourhood prizes, others pull customers from across the city. But they all have one thing in common: they represent a great cross-section of morning dining in Melbourne."
-# })
-#
-# barbeque = Blog.create({
-# title: "Best American Barbeque in Melbourne",
-# tagline: "Take a trip to the Deep South",
-# copy: "American barbeque (or barbecue if you want to be really authentic) is a relatively new kid on the Sydney dining block, but it’s a traditional method of cooking that's had people licking their fingers for centuries. When meat (vegetarians need not apply) is cooked this long and slow, there’s only one result: charred, succulent and profoundly flavoursome. Don’t forget a side of pickles, potato salad or slaw."
-# })
-#
-# puts "Blog Count: #{ Blog.all.count }"
-#
-#
+restaurant = Blog.create({
+title: "Best Restaurants in Melbourne",
+tagline: "The venues shaping this citys culinary scene",
+copy: "What makes a good restaurant? We are interested in how well a place lives up to its own ambitions, regardless of its age, price point or cuisine. Maybe it offers value for money and an incredible atmosphere. Maybe it pioneered a trend, and remains the most vital example of it. Or maybe, after several decades in operation, it still offers an undeniably great experience. All are equally valid answers. The remit may be wide, but if you’re looking for restaurants that both define and capture Melbourne’s culinary spirit, stop right here.",
+venue_id: bad.id
+})
 
-#
-# blog_id: venue.id
-# })
-#   # Use Salvador's Primary Key to serve as The Persistence of Memory's Foreign Key
-#
-# venue_id: guide.id
-# })
-#   # Use Salvador's Primary Key to serve as The Persistence of Memory's Foreign Key
+byo = Blog.create({
+title: "Best BYO Restaurants in Melbourne",
+tagline: "When an expensive wine list just won't do",
+copy: "How good is BYO? Whether you're eating on a budget or itching to try a bottle stashed at home, there is a certain satisfaction in walking through the door and pouring yourself exactly what you want to drink. Here are our favourites.",
+venue_id: bad.id
+})
+
+brunch = Blog.create({
+title: "Best Brunch spots in Melbourne",
+tagline: "Sweet or savoury? Avocado or Eggs? We can help you decide.",
+copy: "Breakfast might even be the closest thing we have to a national cuisine. Here we pay tribute to Melbourne’s best; places shaping the very definition of the pre-midday meal. Others we’ve selected for consistent performance – they’ve nailed the classics and learnt how to handle the crowds that follow. Some are big, some are small. Some are secluded neighbourhood prizes, others pull customers from across the city. But they all have one thing in common: they represent a great cross-section of morning dining in Melbourne.",
+venue_id: bad.id
+})
+
+barbeque = Blog.create({
+title: "Best American Barbeque in Melbourne",
+tagline: "Take a trip to the Deep South",
+copy: "American barbeque (or barbecue if you want to be really authentic) is a relatively new kid on the Sydney dining block, but it’s a traditional method of cooking that's had people licking their fingers for centuries. When meat (vegetarians need not apply) is cooked this long and slow, there’s only one result: charred, succulent and profoundly flavoursome. Don’t forget a side of pickles, potato salad or slaw.",
+venue_id: bad.id
+})
+
+puts "Blog Count: #{ Blog.all.count }"

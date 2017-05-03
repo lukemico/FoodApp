@@ -1,2 +1,37 @@
-<h1>Blog#index</h1>
-<p>Find me in app/views/blog/index.html.erb</p>
+<div class="container">
+
+
+<% @all_blogs.each do |blog| %>
+<div class="section">
+
+
+  <h4><%= blog.title %></h4>
+  <h5><%= blog.tagline %></h5>
+  <h6><%= blog.copy %></h6>
+
+<div class="divider"></div>
+</div>
+
+
+<%= session["important"] %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+
+
+
+
+
+
+<% end %>
+
+</div>

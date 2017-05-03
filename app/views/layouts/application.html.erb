@@ -19,16 +19,23 @@
           <%= link_to @current_user.email, user_path(@current_user) %>
           <%= link_to "Edit Profile", edit_user_path(@current_user) %>
         <% else %>
-          <%= link_to "Login", "/login" %>
-          <%= link_to("Sign up/ Login", "/users") %></div>
+
+        <h6><%= link_to("Sign up/ Login", "/users") %></h6>
+        </div>
     </div>
   </h1>
 
 <nav>
-  <%= link_to("Guide", "/guides") %>
+  <%= link_to("Home", "/home") %>
+  <%= link_to("Food + Drink", "/venue") %>
   <%= link_to("Blog", "/blog") %>
   <%= link_to("About Us", "/about") %>
 </nav>
+
+<nav>
+  Search
+</nav>
+
 
     <%= yield %>
   </body>

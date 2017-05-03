@@ -8,17 +8,7 @@ Rails.application.routes.draw do
 
   get 'login/update'
 
-  get 'comment/new'
-
-  get 'comment/show'
-
-  get 'comment/index'
-
-  get 'comment/update'
-
-  get 'blog/index'
-
-  get 'home/index'
+  root to: 'home#index'
 
   # get 'blog/index'
   #
@@ -31,13 +21,11 @@ Rails.application.routes.draw do
   # get 'home/index'
 
 resources :home
-resources :guides
-resources :venues
+resources :venue
 resources :blog
-resources :comments
 resources :about
+resources :comments
 resources :users
 resources :login
-resources :resources
 
 end
