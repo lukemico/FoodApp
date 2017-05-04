@@ -1,26 +1,58 @@
 @import "materialize";
 
+nav {
+  color: black;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 32px;
+  margin-bottom: 10px;
+  // font-family: 'Archivo Black', sans-serif;
+}
 
+div {
+  font-family: 'Permanent Marker', cursive;
+}
+h1 {
+  text-align: center;
+}
 
-h3  {
-  font-family: 'Archivo Black', sans-serif;
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
 }
 
 h5 {
   font-family: 'Comfortaa', cursive;
+  text-align: center;
 }
 
 h6  {
   font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+
+strong {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+p {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
 }
 
 body {
   text-align: center;
-  font-family: 'Comfortaa', cursive;
-}
-
-a {
-  color: blue;
 }
 
 img {
@@ -29,13 +61,38 @@ img {
   margin: 0 auto;
 }
 
-nav {
-  background-color: #323232;
-  font-size: 32px;
-  font-family: 'Permanent Marker', cursive;
-  // font-family: 'Archivo Black', sans-serif;
-}
 a {
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #636363;
+}
+
+div.logo {
+  text-align: center;
+  font-size: 80px;
+}
+div.login {
+  text-align: right;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+.site-footer {
+  background: orange;
 }
