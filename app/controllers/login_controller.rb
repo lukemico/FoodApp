@@ -14,18 +14,35 @@ class LoginController < ApplicationController
   end
 
   def create
-    @user = User.new( user_params )
-    if @user.save
-      session[:user_id] = @user.id
-      redirect_to user_path( @user )
+    email = params["email"]
+    password = params["password"]
+
+    user = User.find_by(email: email)
+    # If the user exists and you provided the right password
+    if user.present? && user.authenticate(password)
+
+      session[:user_id] = user.id
+      redirect_to "/users"
+
     else
-      render :new # Show them the Sign Up form again
+      flash[:login_error] = "The password or email was incorrect"
+      # Show the login form again (potentially with a temporary message)
+      render :new # Show the new form
     end
   end
 
   def edit
   end
 
+  # class SessionController < ApplicationController
+  #   def new
+  #   end
+  #
+  #   def destroy
+  #     session[:user_id] = nil
+  #     redirect_to "/users"
+  #   end
+  # end
 
   private
     def user_params

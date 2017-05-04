@@ -6,8 +6,10 @@ class BlogController < ApplicationController
   def show
     # @all_venues = Venue.all
     @blog = Blog.find(params[:id])
-    @comments = @blog.comments.all
-    @comment = @blog.comments.build
+    @comment = Comment.new
+    @comment.blog_id = params["id"]
+    # irb
+
   end
 
   def destroy

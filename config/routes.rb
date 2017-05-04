@@ -13,7 +13,11 @@ get "/blog/:id/update" => 'comments#update'
 get "/blog/:id/delete" => 'comments#delete'
 resources :comments
 resources :users
-resources :login
+# resources :login
+get '/login' => 'login#new'
+post '/login' => 'login#create'
+delete '/logout' => 'login#delete'
+
 
 end
 

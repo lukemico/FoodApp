@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   def new
-    @comment = Comment.find_by(id: params['id'])
+    # @comment = Comment.find_by(id: params['id'])
+      @comment = Comment.new
   end
 
   def show
@@ -8,30 +9,20 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comments = Comment.new(id: params['id'])
+    @comment = Comment.new(id: params['id'])
+    @comment.input = params["comment"]["input"]
+    @comment.name = @current_user.name
+    @comment.user_id = @current_user.id
+    @comment.blog_id = params["comment"]["blog_id"]
+    blog = Blog.find( params["comment"]["blog_id"] )
+ 
     if @comment.save
-      session[:user_id] = @user.id
-      redirect_to user_path( @comment )
-    else
-      render :new # Show them the Sign Up form again
+    #   session[:user_id] = @user.id
+    #   redirect_to user_path( @comment )
+      redirect_to blog_path( blog )
+    # else
+    #   render :new # Show them the Sign Up form again
     end
-
-
-    def create
-      post = Post.new( post_params )
-      post.user = @current_user
-      post.save
-      redirect_to post_path(post)
-      # redirect_to "/posts/#{post.id}"
-    end
-
-
-
-
-
-  end
-
-  def update
   end
 
   def destroy

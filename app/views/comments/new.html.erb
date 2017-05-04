@@ -1,13 +1,10 @@
 <h1>Create blog comment</h1>
 
-<%= form_for @comments do |comment| %>
+<%= form_for @comment do |f| %>
+
   <p>
-    <%= f.label :heading %>
-    <%= f.text_field :heading, required: true %>
-  </p>
-  <p>
-    <%= f.label :content %>
-    <%= f.text_area :content, required: true %>
+    <%= f.label :input %>
+    <%= f.text_area :input, required: true %>
   </p>
 
   <%= f.submit %>
