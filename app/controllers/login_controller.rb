@@ -34,10 +34,21 @@ class LoginController < ApplicationController
   def edit
   end
 
+  def delete
+    session[:user_id] = nil
+    redirect_to "/users"
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to "/users"
+  end
+
+
   # class SessionController < ApplicationController
   #   def new
   #   end
-  #
+
   #   def destroy
   #     session[:user_id] = nil
   #     redirect_to "/users"

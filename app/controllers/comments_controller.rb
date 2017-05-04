@@ -11,11 +11,11 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(id: params['id'])
     @comment.input = params["comment"]["input"]
-    @comment.name = @current_user.name
-    @comment.user_id = @current_user.id
+    @comment.name = @current_user
+    @comment.user_id = @current_user
     @comment.blog_id = params["comment"]["blog_id"]
     blog = Blog.find( params["comment"]["blog_id"] )
- 
+
     if @comment.save
     #   session[:user_id] = @user.id
     #   redirect_to user_path( @comment )
