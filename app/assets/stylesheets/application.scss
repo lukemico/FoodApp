@@ -1,8 +1,22 @@
 @import "materialize";
 
+
+
+h3  {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h5 {
+  font-family: 'Comfortaa', cursive;
+}
+
+h6  {
+  font-family: 'Comfortaa', cursive;
+}
+
 body {
   text-align: center;
-  font-family: monospace;
+  font-family: 'Comfortaa', cursive;
 }
 
 a {
@@ -17,4 +31,11 @@ img {
 
 nav {
   background-color: #323232;
+  font-size: 32px;
+  font-family: 'Permanent Marker', cursive;
+  // font-family: 'Archivo Black', sans-serif;
+}
+a {
+  padding-left: 45px;
+  padding-right: 45px;
 }

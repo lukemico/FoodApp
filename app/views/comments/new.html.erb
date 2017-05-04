@@ -1,6 +1,6 @@
 <h1>Create blog comment</h1>
 
-<%= form_for @comment do |f| %>
+<%= form_for (@comment) do |f| %>
 
   <p>
     <%= f.label :input %>
@@ -8,4 +8,13 @@
   </p>
 
   <%= f.submit %>
+<% end %>
+
+<%= form_for(@comment) do |f| %>
+
+  <div class="field">
+    <%= f.text_area :input, placeholder: "Post feedback or contribute content
+    to this work!" %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-small btn-primary" %>
 <% end %>

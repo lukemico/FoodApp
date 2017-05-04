@@ -18,6 +18,9 @@ get '/login' => 'login#new'
 post '/login' => 'login#create'
 delete '/logout' => 'login#delete'
 
+get "/sass.html" => 'home#index'
+
+
 
 end
 

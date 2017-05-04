@@ -15,7 +15,7 @@ text: "",
 venue: "The Breakfast Club",
 address: "206 St George Road",
 suburb: "Northcote",
-phone: 03 9416 4884,
+phone: "03 9416 4884",
 website: "https://www.facebook.com/thebreakfastclubcafe"
 })
 

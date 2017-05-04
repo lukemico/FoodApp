@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     @comment.name = @current_user
     @comment.user_id = @current_user
     @comment.blog_id = params["comment"]["blog_id"]
-    blog = Blog.find( params["comment"]["blog_id"] )
+    @comment = Blog.find( params["comment"]["blog_id"] )
 
     if @comment.save
     #   session[:user_id] = @user.id

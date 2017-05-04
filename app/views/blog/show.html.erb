@@ -25,7 +25,7 @@
   <%= form_for @comment do |f| %>
       <p>
         <!-- <%= f.label :input %> -->
-        <%= f.hidden_field :blog_id, :value => @blog.id %>
+        <%= f.hidden_field :blog, :value => params["id"] %>
 
       <%= f.label :input %>
       <%= f.text_field :input %>
