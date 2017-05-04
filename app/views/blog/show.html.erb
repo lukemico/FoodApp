@@ -1,2 +1,9 @@
-<h1>Blog#show</h1>
-<p>Find me in app/views/blog/show.html.erb</p>
+
+
+<h1><%= @blog.name %></h1>
+
+<ul>
+  <li>Title:  <%= @blog.title %></li>
+  <li>About: <%= @blog.tagline %></li>
+  <li>Description: <%= @blog.copy %></li>
+</ul>
