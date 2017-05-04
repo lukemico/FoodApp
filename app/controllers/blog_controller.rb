@@ -7,12 +7,6 @@ class BlogController < ApplicationController
   end
 
   def show
-    @blog = Blog.find_by(id: params['id'])
+    @blog = Blog.find(params[:id])
   end
-  
-  # def destroy
-  #   blog = Blog.find_by(id: params["id"])
-  #   blog.destroy
-  #   redirect_to "/blog"
-  # end
 end

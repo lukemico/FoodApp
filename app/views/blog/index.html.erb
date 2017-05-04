@@ -1,4 +1,16 @@
-<div class="row">
+<div class="container">
+  <% @all_blogs.each do |blog| %>
+
+  <div class="section">
+    <h4><%= link_to(blog.title, "/blog/#{blog.id}") %></h4>
+
+
+  <div class="divider"></div>
+
+  <% end %>
+</div>
+
+<!-- <div class="row">
       <div class="blog 1">Best Cafes in Melbourne</div>
       <%= link_to "Click here", "/blog/show" %>
 
@@ -12,43 +24,4 @@
       <%= link_to "Click here", "/blog/show" %>
 
       <div class="blog 1">Best American Barbeque in Melbourne</div>
-      <%= link_to "Click here", "/blog/show" %>
-
-<!-- <div class="container">
-  <% @all_blogs.each do |blog| %>
-
-  <div class="section">
-    <h4><%= blog.title %></h4>
-    <h5><%= blog.tagline %></h5>
-    <h6><%= blog.copy %></h6>
-
-  <div class="divider"></div>
-
-  <% end %>
-</div>
-
- -->
-
-<!-- <%= session["important"] %> -->
-
-<!-- <table>
-  <tbody>
-    <%# @users.each do |users| %>
-      <tr>
-        <td><%#= user.comment %></td>
-        <td><%#= user.edit %></td>
-        <td><%#= user.destroy %></td>
-        <td><%#= link_to 'Comment', user %></td>
-        <td><%#= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%#= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <%# end %>
-  </tbody>
-
-  <h1>All Comments</h1>
-
-  <%# @all_comments.each do |comment| %>
-    <p>
-      <%#= link_to( comment.title, comment_path(comment) ) %>
-    </p>
-  <%# end %> -->
+      <%= link_to "Click here", "/blog/show" %> -->
