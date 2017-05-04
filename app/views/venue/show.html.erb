@@ -1,0 +1,15 @@
+<% @all_venues.each do |venue| %>
+  <h5><%= venue.venue %></h5>
+  <h6><%= venue.category %></h3>
+  <h6><%= venue.address %></h6>
+  <h6><%= venue.suburb %></h6>
+  <h6><%= venue.phone %></h6>
+  <h6><%= venue.website %></h6>
+
+<% end %>
+
+<div class="controls">
+  <%= link_to("Add Comment", "/venue/#{@venue.id}/new") %>
+  <%= link_to("Edit Comment", "/venue/#{@venue.id}/update") %>
+  <%= link_to("Delete Comment", "/venue/#{@venue.id}", method: :delete, data: { confirm: "Are you sure?" }) %>
+</div>

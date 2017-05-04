@@ -1,31 +1,36 @@
 Rails.application.routes.draw do
 
-  get 'login/new'
-
-  get 'login/show'
-
-  get 'login/index'
-
-  get 'login/update'
-
-  root to: 'home#index'
-
-  # get 'blog/index'
-  #
-  # get 'blog/show'
-  #
-  # get 'blog/update'
-  #
-  # root to: 'pages#index'
-  #
-  # get 'home/index'
+root to: 'home#index'
 
 resources :home
 resources :venue
+get "/venue/:id/new" => 'venues#new'
+get "/venue/:id/update" => 'venues#update'
+get "/venue/:id/delete" => 'venues#delete'
 resources :blog
-resources :about
+get "/blog/:id/new" => 'comments#new'
+get "/blog/:id/update" => 'comments#update'
+get "/blog/:id/delete" => 'comments#delete'
 resources :comments
 resources :users
 resources :login
 
 end
+
+# get 'login/new'
+
+# get 'login/show'
+
+# get 'login/index'
+#
+# get 'login/update'
+
+# get 'blog/index'
+#
+# get 'blog/show'
+#
+# get 'blog/update'
+#
+# root to: 'pages#index'
+#
+# get 'home/index'

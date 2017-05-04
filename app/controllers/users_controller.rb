@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :check_if_logged_in, only: [:edit, :update]
 
   def index
+    @users = User.all
   end
 
   def show
@@ -26,23 +27,25 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def destroy
+  end
 
-  private
-    def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
+private
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
 
-    def check_if_logged_out
-      if @current_user
-        flash[:error] = "You are already logged in"
-        redirect_to "/users"
-      end
+  def check_if_logged_out
+    if @current_user
+      flash[:error] = "You are already logged in"
+      redirect_to "/users"
     end
+  end
 
-    def check_if_logged_in
-      unless @current_user
-        flash[:error] = "You need to be logged in for that"
-        redirect_to "/login"
-      end
+  def check_if_logged_in
+    unless @current_user
+      flash[:error] = "You need to be logged in for that"
+      redirect_to "/login"
     end
+  end
 end
