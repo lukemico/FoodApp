@@ -9,15 +9,21 @@ nav {
   // font-family: 'Archivo Black', sans-serif;
 }
 
+div.login.col.s12.m4 {
+  text-align: right;
+}
+
 div {
   font-family: 'Permanent Marker', cursive;
 }
 h1 {
   text-align: center;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h2 {
   text-align: center;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h3 {
@@ -25,7 +31,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Comfortaa', cursive;
   text-align: center;
 }
 
@@ -84,11 +90,11 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  margin-bottom: -100px;
 }
 .page-wrap:after {
   content: "";
-  display: block;
+  display: flex;
 }
 .site-footer, .page-wrap:after {
   height: 142px;

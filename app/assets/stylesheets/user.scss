@@ -8,3 +8,21 @@
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
 <% end %>
+
+
+h4 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+
+h5 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+
+h6 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+
+div {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
