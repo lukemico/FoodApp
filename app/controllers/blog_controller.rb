@@ -9,7 +9,6 @@ class BlogController < ApplicationController
     @comment = Comment.new
     @comment.blog_id = params["id"]
     # irb
-
   end
 
   def destroy

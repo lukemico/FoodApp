@@ -48,6 +48,10 @@ h5 {
   font-size: 16px;
 }
 
+h5.white-text {
+  font-family: 'Permanent Marker', cursive;
+}
+
 h6  {
   font-family: 'Comfortaa', cursive;
   text-align: center;
@@ -112,6 +116,7 @@ div.login {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -100px;
+  width: 100%;
 }
 .page-wrap:after {
   content: "";
