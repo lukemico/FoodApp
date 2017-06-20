@@ -23,4 +23,7 @@ delete '/logout' => 'login#delete'
 
 get "/sass.html" => 'home#index'
 
+get "/about" => "about#index"
+
+
 end

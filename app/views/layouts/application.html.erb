@@ -4,17 +4,21 @@
     <title>F*O*O*D</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-
   </head>
 
   <body>
-    <div class="login">
+
       <div class="col s12 m4">
+
+        <div class="logo">
+          <div class="col s12 m4">F*O*O*D</div>
+        </div>
+
         <% if @current_user %>
           <%= link_to "Log Out", "/logout", method: :delete %>
           <%= link_to @current_user.email, user_path(@current_user) %>
@@ -22,60 +26,58 @@
         <% else %>
 
         <h6><%= link_to("Sign up/ Login", "/users") %></h6>
+
+
+        <% end %>
+
       </div>
-    </div>
 
-    <% end %>
-
-  <div class="logo">
-      <div class="col s12 m4">F*O*O*D</div>
-  </div>
-
-<nav>
-  <%= link_to("Home", "/home") %>
-  <%= link_to("Food + Drink", "/venue") %>
-  <%= link_to("Blog", "/blog") %>
-  <%= link_to("About Us", "/about") %>
-</nav>
-
-<!-- <nav>
-<h4>
-    <a href="#!" class="brand-logo"><i class="material-icons"></i></a>
-    <a href="sass.html"><i class="material-icons">search</i></a>
-</h4>
-</nav> -->
+    <nav>
+      <div class="navbar">
+      <%= link_to("Home", "/home") %>
+      <%= link_to("Food + Drink", "/venue") %>
+      <%= link_to("Blog", "/blog") %>
+      <%= link_to("About Us", "/about") %>
+      </div>
+    </nav>
 
     <%= yield %>
-  </body>
 
-</html>
+    <div class="page-wrap"></div>
 
-<div class="page-wrap">
-
-</div>
-
-
-<footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">F*O*O*D</h5>
-                <p class="grey-text text-lighten-4">Search for your new favorite place to eat and drink.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Food + Drink</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-                </ul>
-              </div>
-            </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">F*O*O*D</h5>
+            <p class="grey-text text-lighten-4">Search for your new favorite place to eat and drink.</p>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Copyright_Food Finder
-            </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Home</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Food + Drink</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Blog</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">About Us
+                </a>
+              </li>
+            </ul>
           </div>
-        </footer>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2017 Copyright - F*O*O*D
+          </div>
+        </div>
+      </footer>
+
+    </body>
+
+  </html>

@@ -6,12 +6,17 @@
 .family {
    position: relative;
    width: 100%; /* for IE 6 */
+   color: ghostwhite;
 }
 
-h2 {
+h4 {
    position: absolute;
    top: 200px;
    left: 0;
    width: 100%;
    color: white;
+}
+
+.site-footer {
+  background: black;
 }

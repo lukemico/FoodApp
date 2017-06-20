@@ -1,21 +1,23 @@
 @import "materialize";
 
 nav {
-  color: black;
+  height: 45px;
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 32px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
   margin-bottom: 10px;
-  // font-family: 'Archivo Black', sans-serif;
+  float: left;
 }
 
-div.login.col.s12.m4 {
-  text-align: right;
+div.teaser-title {
+  color: blue;
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  text-align: center;
+  border: 10px;
+  border-color: red;
 }
 
-div {
-  font-family: 'Permanent Marker', cursive;
-}
 h1 {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
@@ -30,6 +32,11 @@ h3 {
   text-align: center;
 }
 
+h4.signup {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
 h4 {
   font-family: 'Comfortaa', cursive;
   text-align: center;
@@ -38,20 +45,16 @@ h4 {
 h5 {
   font-family: 'Comfortaa', cursive;
   text-align: center;
+  font-size: 16px;
 }
 
 h6  {
   font-family: 'Comfortaa', cursive;
   text-align: center;
-}
-div {
-  text-align: center;
+  float:right;
+  color: black;
 }
 
-strong {
-  font-family: 'Comfortaa', cursive;
-  text-align: center;
-}
 p {
   font-family: 'Comfortaa', cursive;
   text-align: center;
@@ -62,18 +65,31 @@ body {
 }
 
 img {
-  max-width: 300px;
+  width: 300px;
   display: block;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+img.hero {
+  width: 100%;
+  float: left;
+}
+
 
 a {
   padding-left: 30px;
   padding-right: 30px;
-  color: #636363;
+  color: black;
+}
+
+div.row {
+  margin-top: auto;
 }
 
 div.logo {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   font-size: 80px;
 }
@@ -81,12 +97,17 @@ div.login {
   text-align: right;
 }
 
-* {
-  margin: 0;
+.col.s3 {
+  width: 33%;
+  // padding-left: 0px;
+  // padding-right: 0px;
 }
-html, body {
-  height: 100%;
+
+.col.s12.m4 {
+  font-size: 28px;
+  color: #ee6e73;
 }
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
@@ -96,9 +117,27 @@ html, body {
   content: "";
   display: flex;
 }
+
+footer.page-footer {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+}
+
 .site-footer, .page-wrap:after {
   height: 142px;
 }
 .site-footer {
-  background: orange;
+  background: white;
+  color: black;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
