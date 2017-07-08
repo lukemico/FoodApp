@@ -9,14 +9,42 @@
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+
+
   </head>
 
   <body>
 
+      <ul id="slide-out" class="side-nav">
+        <li><div class="user-view">
+          <!-- <div class="background">
+            <img src="images/image.jpg">
+          </div> -->
+          <!-- <a href="#!user"><img class="circle" src="images/yuna.jpg"></a> -->
+          <!-- <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a> -->
+        </div></li>
+        <li><a href="#!">Home</a></li>
+        <!-- <li><a href="#!"><i class="material-icons">cloud</i>Home</a></li> -->
+
+
+        <li><a href="#!">Food + Drink</a></li>
+        <li><div class="divider"></div></li>
+        <!-- <li><a class="subheader">Subheader</a></li> -->
+        <li><a class="waves-effect" href="#!">Blog</a></li>
+        <li><a class="waves-effect" href="#!">About Foodie</a></li>
+        <li><a class="waves-effect" href="#!">Your Profile</a></li>
+
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+
       <div class="col s12 m4">
 
         <div class="logo">
-          <div class="col s12 m4">F*O*O*D</div>
+          <div class="col s12 m4">F*O*O*D*I*E</div>
         </div>
 
         <% if @current_user %>
@@ -25,20 +53,21 @@
           <%= link_to "Edit Profile", edit_user_path(@current_user) %>
         <% else %>
 
-        <h6><%= link_to("Sign up/ Login", "/users") %></h6>
+        <h6><%= link_to("Sign up", "/users/new") %></h6>
+        <h6><%= link_to("Login", "/login") %></h6>
 
         <% end %>
 
       </div>
 
-    <nav>
+    <!-- <nav>
       <div class="navbar">
       <%= link_to("Home", "/home") %>
       <%= link_to("Food + Drink", "/venue") %>
       <%= link_to("Blog", "/blog") %>
       <%= link_to("About Us", "/about") %>
       </div>
-    </nav>
+    </nav> -->
 
     <%= yield %>
 
@@ -72,7 +101,7 @@
       </div>
       <div class="footer-copyright">
         <div class="container">
-          © 2017 Copyright - F*O*O*D
+          © 2017 Copyright - F*O*O*D*I*E
           </div>
         </div>
       </footer>

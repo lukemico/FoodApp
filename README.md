@@ -1,25 +1,53 @@
-# README
+# F*O*O*D*I*E - Project 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+First major project made by Luke Mico. The app is a searchable website that contains restaurants, bars and cafe information and user reviews.
 
-Things you may want to cover:
+## Overview
+* Overview of the idea and technologies used
+  * F*O*O*D*I*E is an app that allows you find restaurants, bars and cafe based on your preferences, on specific location and or date range.
 
-* Ruby version
+* Overview of code structure
+  * Schema
+    * 4 tables
 
-* System dependencies
+* Project Plan
+  * Project Plan - Trello
+  * Wireframe - MarvelApp
 
-* Configuration
+### Languages
+* Rails
+* Ruby
+* JavaScript - handle the  data and its outputs
+* CSS - Used to override some Bootstrap defaults
 
-* Database creation
+### Libraries
+* Materialize
+* FontAwesome - CSS toolkit
 
-* Database initialization
+### Gems
+* bcrypt
+* Geocoder
+* PostGreSQL
+* Byebug
 
-* How to run the test suite
+### APIs
+* Cloudinary
 
-* Services (job queues, cache servers, search engines, etc.)
+### Features
+* Venue Search based on location
+* Venue search based on user current location
+* Save a venue as a favourite and see how many other users are currently registered
+* Predefined collections of venue's based on venue parameter's
 
-* Deployment instructions
+### Known Bugs
+* Search functionality will not work while not logged in
 
-* ...
-# FoodApp
+### What's next
+* Extend research
+* Social login & share
+* Ratings
+* Calendar
+* validation
+
+## Live
+Live version can be found [HERE] (https://whispering-cliffs-35641.herokuapp.com/)

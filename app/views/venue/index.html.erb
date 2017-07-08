@@ -2,7 +2,7 @@
 
   <% @all_venues.each do |venue| %>
   <div><%= venue.venue %></div>
-  <%= link_to "Click here", venue_path(venue) %>
+  <%= link_to venue_path(venue) %>
   <hr>
   <% end %>
 
