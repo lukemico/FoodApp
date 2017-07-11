@@ -14,3 +14,13 @@ div {
   font-family: 'Comfortaa', cursive;
   text-align: center;
 }
+
+div.row {
+  margin: 0 auto;
+  display: table;
+  width: 50%;
+}
+
+.row {
+    display: table;
+}

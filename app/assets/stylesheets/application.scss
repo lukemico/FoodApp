@@ -1,23 +1,5 @@
 @import "materialize";
 
-nav {
-  height: 45px;
-  text-align: center;
-  font-family: 'Comfortaa', cursive;
-  font-size: 16px;
-  margin-bottom: 10px;
-  float: left;
-}
-
-div.teaser-title {
-  color: blue;
-  font-family: 'Comfortaa', cursive;
-  font-size: 30px;
-  text-align: center;
-  border: 10px;
-  border-color: red;
-}
-
 h1 {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
@@ -32,11 +14,6 @@ h3 {
   text-align: center;
 }
 
-h4.signup {
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-}
-
 h4 {
   font-family: 'Comfortaa', cursive;
   text-align: center;
@@ -48,15 +25,12 @@ h5 {
   font-size: 16px;
 }
 
-h5.white-text {
-  font-family: 'Permanent Marker', cursive;
-}
-
 h6  {
   font-family: 'Comfortaa', cursive;
   text-align: center;
-  float:right;
   color: black;
+  width: 80%;
+  margin: 0 auto;
 }
 
 p {
@@ -76,11 +50,9 @@ img {
   padding-right: 10px;
 }
 
-img.hero {
-  width: 100%;
-  float: left;
+.container {
+  width: 800px;
 }
-
 
 a {
   padding-left: 30px;
@@ -92,13 +64,11 @@ div.row {
   margin-top: auto;
 }
 
-div.logo {
+.logo {
   font-family: 'Permanent Marker', cursive;
+  font-size: 28px;
+  color: white;
   text-align: center;
-  font-size: 80px;
-}
-div.login {
-  text-align: right;
 }
 
 .col.s3 {
@@ -108,8 +78,10 @@ div.login {
 }
 
 .col.s12.m4 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 28px;
-  color: #ee6e73;
+  color: white;
+  text-align: center;
 }
 
 .page-wrap {
@@ -151,7 +123,6 @@ main {
   text-align: center;
 }
 
-
 header, main, footer {
    padding-left: 300px;
  }
@@ -161,4 +132,3 @@ header, main, footer {
      padding-left: 0;
    }
  }
-       

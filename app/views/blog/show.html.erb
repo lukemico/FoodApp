@@ -1,3 +1,5 @@
+<h1>Blog</h1>
+
 <h4><% @blog.title %></h4>
 <h5><%= @blog.tagline %></h5>
 <h6> <%= @blog.copy %></h6>
@@ -16,7 +18,8 @@
   <div>
     <strong><%= comment.user.name %></strong>
     <br>
-    <p><%= comment.input %></p>
+    <p><%= comment.
+     %></p>
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>
 <% end %>

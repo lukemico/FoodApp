@@ -1,51 +1,40 @@
-<%= form_for(@user) do |f| %>
-    <h1>Sign Up</h1>
-    <% unless @user.errors.full_messages.empty? %>
-        <% @user.errors.full_messages.each do |e| %>
-            <p>
-            <%= e %>
-            </p>
-        <% end %>
-    <% end %>
+<h1>Sign up</h1>
+
+<% if flash[:login_error] %>
+  <p>
+    <%= flash[:login_error] %>
+  </p>
+<% end %>
 
 <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="First Name" id="first_name" type="text" class="validate">
-          <label for="first_name"></label>
+          <label for="first_name">First Name</label>
         </div>
 
         <div class="input-field col s6">
           <input placeholder="Surname" id="last_name" type="text" class="validate">
-          <label for="last_name"></label>
+          <label for="last_name">Surname</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
           <input placeholder="Email" id="email" type="email" class="validate">
-          <label for="email"></label>
+          <label for="email">Email</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
           <input placeholder="Password" id="password" type="password" class="validate">
-          <label for="password"></label>
+          <label for="password">Password</label>
         </div>
       </div>
 
-      <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Confirm Password" id="password" type="password" class="validate">
-          <label for="password"></label>
-        </div>
-      </div>
-
-      <%= submit_tag "Submit" %>
+      <%= submit_tag "Sign up" %>
 
     </form>
   </div>
-
-<% end %>

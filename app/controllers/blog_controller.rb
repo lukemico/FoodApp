@@ -1,4 +1,6 @@
 class BlogController < ApplicationController
+
+
   def index
     @all_blogs = Blog.all
   end
@@ -16,4 +18,5 @@ class BlogController < ApplicationController
     blog.destroy
     redirect_to "/blog"
   end
-end
+    end
+    

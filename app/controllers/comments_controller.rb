@@ -8,26 +8,38 @@ class CommentsController < ApplicationController
     @comment = Comment.find_by(id: params['id'])
   end
 
-  def create
-    @comment = Comment.new(id: params['id'])
-    @comment.input = params["comment"]["input"]
-    @comment.name = @current_user
-    @comment.user_id = @current_user
-    @comment.blog_id = params["comment"]["blog_id"]
-    @comment = Blog.find( params["comment"]["blog_id"] )
+  def index
+    @comments = Comment.all
+  end
+
+def create
+    @comment = Comment.new(comment_params)
+    respond_to do |format|
 
     if @comment.save
-    #   session[:user_id] = @user.id
-    #   redirect_to user_path( @comment )
+      session[:user_id] = @user.id
+      redirect_to user_path( @comment )
       redirect_to blog_path( blog )
-    # else
-    #   render :new # Show them the Sign Up form again
+    else
+      format.html { render 'new'} ## Specify the format in which you are rendering "new" page
+      format.json { render json: @comment.errors } ## You might want to specify a json format as well
+    end
+
     end
   end
+end
 
   def destroy
     comment = Comment.find_by(id: params["id"])
     comment.destroy
     redirect_to "/blog"
   end
-end
+
+
+private
+    # Use callbacks to share common setup or constraints between actions.
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def comment_params
+      params.require(:comment).permit(:user_id)
+    end
