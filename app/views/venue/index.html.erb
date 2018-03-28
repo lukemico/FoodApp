@@ -1,9 +1,9 @@
-<h1>Food + Drink</h1>
+<!-- <h1>Food + Drink</h1>
 
 <div class="row">
 
 <div class="image">
-  
+
 </div>
 
 
@@ -15,4 +15,23 @@
   <hr>
   <% end %>
 
+</div> -->
+
+<h1>Food + Drink<br>
+    <small>Find the best places to eat + drink near you</small>
+</h1>
+
+<div class="container">
+    <div class="row">
+      <% @all_venues.each do |venue| %>
+        <div class="col-sm-4">
+            <div class="col-sm-12 thumbnail text-center img-responsive">
+                <%= link_to(image_tag(w.image, style: "width: 300px; height: 200px; margin-bottom: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, .3)", class: "img-responsive"), venue_path(w.id) ) %>
+                <div class="caption">
+                    <h4><strong><%= link_to(w.name, venue_path(w), style: "color: #fff; text-shadow: 5px 5px 5px black;") %></strong></h4>
+                </div>
+            </div>
+        </div>
+      <% end %>
+    </div>
 </div>

@@ -8,7 +8,7 @@ class VenueController < ApplicationController
 
   def show
     @venue = Venue.find_by(id: params['id'])
-    @all_venues = Venue.all
+    @all_venues = Venues.all
   end
 
   def destroy
