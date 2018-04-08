@@ -10,37 +10,33 @@
 	    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	
-	    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" rel="stylesheet">
+
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	    <!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	
+		<!-- Bootstrap core CSS -->
+		<link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="album.css" rel="stylesheet">
 	    
 	    <title>F*O*O*D</title>
 	    <%= csrf_meta_tags %>
 	
 	    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	    <!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-		<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-	
-	
-	
-	
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-
-		<title>F*O*O*D</title>
-
-		<!-- Bootstrap core CSS -->
-		<link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Custom styles for this template -->
-		<link href="album.css" rel="stylesheet">
+		
   	</head>
 
   	<body>
@@ -50,199 +46,182 @@
            	<header class="blog-header py-3">
 	        	<div class="row flex-nowrap justify-content-between align-items-center">
 					<div class="col-4 pt-1">
-						<a class="text-muted" href="#">Subscribe</a>
+						<a class="text-muted" href="#">subscribe</a>
 	        		</div>
 					<div class="col-4 text-center">
-						<a class="blog-header-logo text-dark" href="#">f.o.o.d</a>
+						<a class="blog-header-logo text-dark" href="#">f.o.o.d.i.e</a>
 	        		</div>
 					<div class="col-4 d-flex justify-content-end align-items-center">
 						<a class="text-muted" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
 	            		</a>
-						<a class="btn btn-sm btn-outline-secondary cyan darken-1" href="#">Sign up</a>
-	    			</div>
+						<button type="button" class="btn btn-link btn-primary "><a href="#">Sign up </a></button>
+					</div>
 	        	</div>
 	      	</header>
 	    </div>	
-			
-		<div class="nav-scroller py-1 mb-2 bg-dark">
-	    	<nav class="nav bg-dark">
-				<div class="col-12 d-flex justify-content-center">												
-					<a class="navigation-link" href="/venue">Food + Drink</a>
-						<span class="navigation-spacer" aria-hidden="true">|</span>
-					<a class="navigation-link" href="/sydney/art-and-design/">Art + Design</a>
-						<span class="navigation-spacer" aria-hidden="true">|</span>
-					<a class="navigation-link" href="/sydney/entertainment/">Entertainment</a>
-						<span class="navigation-spacer" aria-hidden="true">|</span>
-					<a class="navigation-link" href="/sydney/travel/">Travel</a>
-						<span class="navigation-spacer" aria-hidden="true">|</span>
-					<a class="navigation-link" href="https://shop.broadsheet.com.au">Shop</a>
-				<div>	
-			</nav>
+	    
+	    <div class="nav-scroller py-1 mb-2 bg-dark">
+        	<nav class="nav bg-dark d-flex justify-content-between">
+	        	<div class="col-12 d-flex justify-content-center">	
+		        	<a class="text-white" href="/venue">FOOD + DRINK</a> 
+						<span class="navigation-spacer text-white" aria-hidden="true">|</span>
+					<a class="text-white" href="/sydney/art-and-design/">ART + DESIGN</a> 
+						<span class="navigation-spacer text-white" aria-hidden="true">|</span>
+					<a class="text-white" href="/sydney/entertainment/">ENTERTAINMENT</a> 
+						<span class="navigation-spacer text-white" aria-hidden="true">|</span>
+					<a class="text-white" href="/sydney/travel/">TRAVEL</a>
+						<span class="navigation-spacer text-white" aria-hidden="true">|</span>
+					<a class="text-white" href="https://shop.broadsheet.com.au">SHOP</a>
+						<span class="navigation-spacer text-white" aria-hidden="true">|</span>
+	    		</div>	
+	        </nav>
     	</div>
   	</header>
 
     <main role="main">
-	  <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading font-italic">Delicious headline</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2 cyan darken-1">Read more</a>
-<!--             <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
-          </p>
-        </div>
-      </section>
+	  	<section class="jumbotron text-center">
+	        <div class="container">
+	        	<h1>Delicious headline</h1>
+				<p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+				<p><button type="button" class="btn btn-info"><a class="text-white" href="#">READ MORE </a></button></p>
+	        </div>
+		</section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
+		<div class="album py-5 bg-light">
+        	<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/f4/53/f453b7b6e793a5e341b8e8c68fb0056b.jpg" alt="Card Cap">
+							<div class="card-body">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-info">Read more</button>
+									</div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/f4/53/f453b7b6e793a5e341b8e8c68fb0056b.jpg" alt="Card Cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary cyan darken-1">Read more</button>
-<!--                        -->
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-<div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/2a/29/2a29c99ba8ec9f6ae57b59605610304d.jpg" alt="Card Cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary cyan darken-1">Read more</button>
-<!--                        -->
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-<div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/4d/52/4d52272be59531da12de67208b952b12.jpg" alt="Card Cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary cyan darken-1">Read more</button>
-<!--                        -->
-                    </div>
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-12">
-              	<div class="card mb-8 box-shadow text-center white-text text-white">
-                	<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/38/d6/38d69ab18e95a34dc96024809f196129.jpg" >
-					<div class="card-img-overlay text-center">
-		                <div class="card-body">
-		                	<p class="card-title">Image 1 - This content is a little bit longer.</p>
-			                <div class="d-flex justify-content-between align-items-center">
-			                    <div class="btn-group align-center">
-			                    	<button type="button" class="btn btn-sm btn-outline-secondary cyan darken-1 btn-block">Read more</button>
-			                    </div>
-			                </div>
-		            	</div>
-		            </div>    
-              	</div>
-            </div>
-        </div>
-        <div class="row">
-            
-            <div class="col-md-6">
-              <div class="card mb-6 box-shadow text-center white-text text-white">
-                <img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/26/b8/26b8f029ff6e6a9dfe8304e1e8daebf7.jpg" alt="Card image cap">
-                	<div class="card-img-overlay">
-	                	<div class="card-body">
-		                	<p class="card-title">
-							<p class="card-text">Image 2 - card with supporting text below as a natural lead-in.</p>
-							<div class="d-flex justify-content-between align-items-center text-center">
-								<div class="btn-group">
-									<button type="button" class="btn btn-lg btn-outline-light cyan darken-1">Read more</button>
+					<div class="col-md-4">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/2a/29/2a29c99ba8ec9f6ae57b59605610304d.jpg" alt="Card Cap">
+							<div class="card-body">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-info">Read more</button>
+                    				</div>
                     			</div>
-		                	</div>
-		                </div>
+                			</div>
+              			</div>
+            		</div>
+
+					<div class="col-md-4">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/4d/52/4d52272be59531da12de67208b952b12.jpg" alt="Card Cap">
+							<div class="card-body">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-info">Read more</button>
+                    				</div>
+            					</div>
+                			</div>
+        				</div>
+        			</div>
+
+		            <div class="col-md-12">
+		            	<div class="card mb-8 box-shadow text-center white-text text-white">
+		                	<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/38/d6/38d69ab18e95a34dc96024809f196129.jpg" >
+							<div class="card-img-overlay text-center">
+				                <div class="card-body">
+				                	<p class="card-title">Image 1 - This content is a little bit longer.</p>
+					                <div class="d-flex justify-content-between align-items-center">
+					                    <div class="btn-group align-center">
+					                    	<button type="button" class="btn btn-info">Read more</button>
+					                    </div>
+					                </div>
+				            	</div>
+				            </div>    
+		              	</div>
 		            </div>
 		        </div>
-			</div>
-			
-			<div class="col-md-6">
-              <div class="card mb-6 box-shadow text-center white-text text-white">
-                <img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/9b/92/9b9295d7fba8ca955ab12b5037ecc333.jpg" alt="Card image cap">
-                	<div class="card-img-overlay">
-	                	<div class="card-body">
-		                	<p class="card-title">
-							<p class="card-text">Image 3 -  card with supporting text below as a natural lead-in.</p>
-							<div class="d-flex justify-content-between align-items-center text-center">
-								<div class="btn-group">
-									<button type="button" class="btn btn-lg btn-outline-light cyan darken-1">Read more</button>
-                    			</div>
-		                	</div>
-		                </div>
-		            </div>
-		        </div>
-			</div>	
-	
-            
-          </div>
-        </div>
-      </div>
-
-    </main>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-6 box-shadow text-center white-text text-white">
+						<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/26/b8/26b8f029ff6e6a9dfe8304e1e8daebf7.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="card-body">
+									<p class="card-title">
+									<p class="card-text">Image 2 - card with supporting text below as a natural lead-in.</p>
+									<div class="d-flex justify-content-between align-items-center text-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-info">Read more</button>
+                    					</div>
+		                			</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+			          	<div class="card mb-6 box-shadow text-center text-white">
+			            	<img class="card-img-top" src="https://www.broadsheet.com.au/media/cache/9b/92/9b9295d7fba8ca955ab12b5037ecc333.jpg" alt="Card image cap">
+		            		<div class="card-img-overlay">
+		                		<div class="card-body">
+			                		<p class="card-title">
+									<p class="card-text">Image 3 -  card with supporting text below as a natural lead-in.</p>
+									<div class="d-flex justify-content-between align-items-center text-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-info">Read more</button>
+		                    			</div>
+				                	</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+		    </div>
+		</div>
+	</main>
     
-    <footer class="cyan darken-1 white-text text-white">
+    <footer class=" bg-info ">
 		<div class="container">		    
 		    <div class="row">
-		                
 		        <div class="col-6 col-md justify-content-left text-white">
-					<h5 class="blog-header-logo">Features</h5>
-					<ul class="list-unstyled text-small text-white">
-						<li><a class="text-white" href="#">Cool stuff</a></li>
-						<li><a class="text-white" href="#">Random feature</a></li>
-						<li><a class="text-white" href="#">Team feature</a></li>
-						<li><a class="text-white" href="#">Stuff for developers</a></li>
-		            </ul>
+					<h5>Features</h5>
+						<ul class="list-unstyled text-small text-white">
+							<li><a class="text-white" href="#">Cool stuff</a></li>
+							<li><a class="text-white" href="#">Random feature</a></li>
+							<li><a class="text-white" href="#">Team feature</a></li>
+							<li><a class="text-white" href="#">Stuff for developers</a></li>
+			            </ul>
 		        </div>
 		        
 		        <div class="col-6 col-md">
-		        	<h5 class="blog-header-logo">Get Social</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-white" href="#">Instagram</a></li>
-						<li><a class="text-white" href="#">Twitter</a></li>
-						<li><a class="text-white" href="#">YouTube</a></li>
-						<li><a class="text-white" href="#">SnapChat</a></li>
-		          	</ul>
+		        	<h5>Get Social</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-white" href="#">Instagram</a></li>
+							<li><a class="text-white" href="#">Twitter</a></li>
+							<li><a class="text-white" href="#">YouTube</a></li>
+							<li><a class="text-white" href="#">SnapChat</a></li>
+			          	</ul>
 		        </div>
 		        
 		        <div class="col-6 col-md">
-		        	<h5 class="blog-header-logo">About</h5>
-					<ul class="list-unstyled text-small">
-			            <li><a class="text-white" href="#">Team</a></li>
-			            <li><a class="text-white" href="#">Locations</a></li>
-			            <li><a class="text-white" href="#">Privacy</a></li>
-			            <li><a class="text-white" href="#">Terms</a></li>
-			        </ul>
+		        	<h5>About</h5>
+						<ul class="list-unstyled text-small">
+				            <li><a class="text-white" href="#">Team</a></li>
+				            <li><a class="text-white" href="#">Locations</a></li>
+				            <li><a class="text-white" href="#">Privacy</a></li>
+				            <li><a class="text-white" href="#">Terms</a></li>
+				        </ul>
 			    </div
-			    		</div>
+			</div>
     	</div>	
     </footer>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -254,12 +233,6 @@
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
   </body>
 </html>
-
-
-
-
-
-
 
 
 <!--
